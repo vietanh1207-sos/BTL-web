@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trung tâm Nghệ thuật Sáng tạo - Nơi Khơi Nguồn Cảm Hứng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Trung tâm Nghệ thuật Sáng tạo</h1>
+      <p>Nơi khơi nguồn cảm hứng và phát triển tài năng nghệ thuật của bạn. Cùng chúng tôi khám phá thế giới màu sắc đầy sống động!</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-hero btn-primary" onclick="showTab('course');return false;">Khám phá khóa học</a>
+        <a href="#" class="btn-hero btn-secondary" onclick="document.querySelector('.register-section').scrollIntoView({behavior:'smooth'});return false;">Đăng ký ngay</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-section">
+    <div class="stats-container">
+      <div class="stat-box">
+        <div class="stat-number">2000+</div>
+        <div class="stat-label">Học viên đã tốt nghiệp</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Giảng viên chuyên nghiệp</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">100+</div>
+        <div class="stat-label">Khóa học đa dạng</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Học viên hài lòng</div>
+      </div>
+    </div>
+  </div>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#" class="nav-link active" data-tab="home">Trang Chủ</a></li>
+      <li><a href="#" class="nav-link" data-tab="course">Khóa Học</a></li>
+      <li><a href="#" class="nav-link" data-tab="community">Cộng Đồng</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HOME SECTION -->
+    <section id="home" class="show">
+      <div class="section-header">
+        <h2>Tại sao chọn chúng tôi?</h2>
+        <p class="section-subtitle">Chúng tôi mang đến trải nghiệm học tập nghệ thuật toàn diện với đội ngũ giảng viên hàng đầu và cơ sở vật chất hiện đại</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Giảng viên chuyên nghiệp</h3>
+          <p>Đội ngũ giảng viên giàu kinh nghiệm, tốt nghiệp từ các học viện nghệ thuật danh tiếng trong và ngoài nước.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3>Chương trình đa dạng</h3>
+          <p>Hơn 100 khóa học từ cơ bản đến nâng cao, phù hợp với mọi lứa tuổi và trình độ nghệ thuật.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3>Chứng chỉ uy tín</h3>
+          <p>Cấp chứng chỉ hoàn thành khóa học được công nhận, giúp bạn phát triển sự nghiệp nghệ thuật.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3>Cộng đồng sáng tạo</h3>
+          <p>Kết nối với hàng nghìn nghệ sĩ và người yêu nghệ thuật, chia sẻ đam mê và học hỏi lẫn nhau.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🖼️</div>
+          <h3>Triển lãm định kỳ</h3>
+          <p>Cơ hội trưng bày tác phẩm tại các triển lãm nghệ thuật do trung tâm tổ chức.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💡</div>
+          <h3>Học linh hoạt</h3>
+          <p>Lịch học linh hoạt, kết hợp online và offline, phù hợp với lịch trình của bạn.</p>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <h2>Bộ sưu tập Nghệ thuật nổi bật</h2>
+        <p class="section-subtitle">Khám phá những tác phẩm xuất sắc từ học viên và giảng viên của chúng tôi</p>
+      </div>
+      <div class="gallery">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Tác phẩm 1">
+          <figcaption>
+            Giấc mơ màu xanh
+            <small>by Minh Châu</small>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Tác phẩm 2">
+          <figcaption>
+            Nắng qua phố xưa
+            <small>by Hương Uyên</small>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Tác phẩm 3">
+          <figcaption>
+            Giai điệu sắc màu
+            <small>by Tuấn Anh</small>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=400&q=80" alt="Tác phẩm 4">
+          <figcaption>
+            Hoàng hôn trên biển
+            <small>by Thanh Hà</small>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80" alt="Tác phẩm 5">
+          <figcaption>
+            Rừng xanh mơ màng
+            <small>by Đức Minh</small>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Tác phẩm 6">
+          <figcaption>
+            Chân dung nghệ thuật
+            <small>by Mai Linh</small>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="section-header">
+        <h2>Các khóa học nổi bật</h2>
+        <p class="section-subtitle">Chương trình đào tạo chuyên nghiệp với nội dung phong phú và thực tiễn</p>
+      </div>
+      <div class="courses">
+        <div class="course-card">
+          <div class="course-header">
+            <span class="course-badge">Phổ biến</span>
+          </div>
+          <div class="course-body">
+            <h3>Vẽ Acrylic sáng tạo</h3>
+            <p>Khám phá phối màu và bố cục hiện đại, thực hành mỗi tuần với các kỹ thuật chuyên nghiệp từ cơ bản đến nâng cao.</p>
+            <div class="course-meta">
+              <div class="meta-item">
+                <span class="meta-icon">⏱️</span>
+                <span>12 tuần</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">👥</span>
+                <span>15 học viên</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">📍</span>
+                <span>Offline</span>
+              </div>
+            </div>
+            <a href="#" onclick="showTab('course');return false;">Xem chi tiết</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-header">
+            <span class="course-badge">Mới</span>
+          </div>
+          <div class="course-body">
+            <h3>Kỹ thuật màu nước</h3>
+            <p>Trải nghiệm vẽ chân dung và phong cảnh cùng chuyên gia hàng đầu, làm chủ kỹ thuật tán màu và pha trộn màu sắc.</p>
+            <div class="course-meta">
+              <div class="meta-item">
+                <span class="meta-icon">⏱️</span>
+                <span>10 tuần</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">👥</span>
+                <span>12 học viên</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">📍</span>
+                <span>Hybrid</span>
+              </div>
+            </div>
+            <a href="#" onclick="showTab('course');return false;">Xem chi tiết</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-header">
+            <span class="course-badge">Nâng cao</span>
+          </div>
+          <div class="course-body">
+            <h3>Nghệ thuật số Digital Art</h3>
+            <p>Học vẽ trên máy tính bảng, sử dụng các phần mềm chuyên nghiệp như Procreate, Photoshop để tạo tác phẩm nghệ thuật số.</p>
+            <div class="course-meta">
+              <div class="meta-item">
+                <span class="meta-icon">⏱️</span>
+                <span>16 tuần</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">👥</span>
+                <span>10 học viên</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">📍</span>
+                <span>Online</span>
+              </div>
+            </div>
+            <a href="#" onclick="showTab('course');return false;">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <div class="section-header">
+          <h2>Học viên nói gì về chúng tôi</h2>
+          <p class="section-subtitle">Những chia sẻ chân thực từ học viên đã hoàn thành khóa học</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Khóa học màu nước đã thay đổi hoàn toàn cách tôi nhìn nhận nghệ thuật. Giảng viên nhiệt tình, bài giảng dễ hiểu và thực hành nhiều. Tôi đã có thể vẽ được những bức tranh đẹp chỉ sau 3 tháng học!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">H</div>
+              <div class="author-info">
+                <h4>Hương Uyên</h4>
+                <p>Học viên khóa Màu nước</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Môi trường học tập chuyên nghiệp, cơ sở vật chất hiện đại. Điều tôi thích nhất là được tham gia triển lãm và nhận được nhiều phản hồi tích cực về tác phẩm của mình. Cảm ơn trung tâm rất nhiều!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div class="author-info">
+                <h4>Minh Châu</h4>
+                <p>Học viên khóa Acrylic</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Là người mới bắt đầu, tôi rất lo lắng nhưng giảng viên đã hướng dẫn rất tận tâm. Lớp học nhỏ nên được chú ý nhiều. Giờ tôi đã tự tin vẽ và bán được nhiều tác phẩm. Trung tâm thực sự tuyệt vời!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">T</div>
+              <div class="author-info">
+                <h4>Tuấn Anh</h4>
+                <p>Học viên khóa Digital Art</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="register-section">
+        <div class="register-content">
+          <div class="section-header">
+            <h2>Đăng ký học thử miễn phí</h2>
+            <p class="section-subtitle">Trải nghiệm buổi học đầu tiên hoàn toàn miễn phí. Đăng ký ngay để nhận ưu đãi đặc biệt!</p>
+          </div>
+          <form id="register-form">
+            <label for="name">Họ & tên *</label>
+            <input type="text" id="name" name="name" required placeholder="Nhập họ và tên của bạn">
+            
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com">
+            
+            <label for="phone">Số điện thoại *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="0123 456 789">
+            
+            <label for="course-select">Khóa học quan tâm *</label>
+            <select id="course-select" name="course" required>
+              <option value="">-- Chọn khóa học --</option>
+              <option value="acrylic">Vẽ Acrylic sáng tạo</option>
+              <option value="watercolor">Kỹ thuật màu nước</option>
+              <option value="digital">Nghệ thuật số Digital Art</option>
+              <option value="other">Khóa học khác</option>
+            </select>
+            
+            <label for="message">Lời nhắn (tùy chọn)</label>
+            <textarea id="message" name="message" placeholder="Hãy cho chúng tôi biết mong muốn của bạn..."></textarea>
+            
+            <button type="submit">Gửi đăng ký</button>
+            <div id="msg">✓ Đăng ký thành công! Chúng tôi sẽ liên hệ bạn trong 24h.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSE SECTION -->
+    <section id="course">
+      <div class="tabs">
+        <button class="tab-title active" data-pane="schedule">Lịch trình</button>
+        <button class="tab-title" data-pane="materials">Tài liệu</button>
+        <button class="tab-title" data-pane="video">Video demo</button>
+      </div>
+      
+      <div id="tab-schedule" class="tab-content show">
+        <div class="section-header">
+          <h2>Lịch trình khoá học</h2>
+          <p class="section-subtitle">Chương trình học được thiết kế bài bản, từ cơ bản đến nâng cao</p>
+        </div>
+        <div class="table-container">
+          <table class="sch-table">
+            <thead>
+              <tr>
+                <th>Tuần</th>
+                <th>Chủ đề</th>
+                <th>Nội dung chính</th>
+                <th>Kỹ năng học</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-2</td>
+                <td>Giới thiệu cơ bản</td>
+                <td>Tìm hiểu dụng cụ, màu sắc cơ bản</td>
+                <td>Pha trộn màu</td>
+              </tr>
+              <tr>
+                <td>3-4</td>
+                <td>Vẽ phong cảnh</td>
+                <td>Kỹ thuật vẽ nước, núi, cây</td>
+                <td>Tạo chiều sâu</td>
+              </tr>
+              <tr>
+                <td>5-6</td>
+                <td>Vẽ chân dung</td>
+                <td>Tỷ lệ khuôn mặt, biểu cảm</td>
+                <td>Chi tiết tinh tế</td>
+              </tr>
+              <tr>
+                <td>7-8</td>
+                <td>Kỹ thuật cao cấp</td>
+                <td>Hiệu ứng ánh sáng, bóng tối</td>
+                <td>Chuyên nghiệp hoá</td>
+              </tr>
+              <tr>
+                <td>9-10</td>
+                <td>Dự án thực tế</td>
+                <td>Thực hiện tác phẩm cá nhân</td>
+                <td>Sáng tạo độc lập</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="tab-materials" class="tab-content">
+        <div class="section-header">
+          <h2>Tài liệu học tập</h2>
+          <p class="section-subtitle">Các tài liệu cần chuẩn bị cho khóa học</p>
+        </div>
+        <div class="materials">
+          <ul>
+            <li>Giấy vẽ chuyên dụng (300gsm trở lên)</li>
+            <li>Bộ sơn watercolor cao cấp (tối thiểu 24 màu)</li>
+            <li>Cọ vẽ khác nhau (cọ lông sư tử, lông ngành, cọ dẹp)</li>
+            <li>Bảng trộn màu chuyên dụng</li>
+            <li>Giấy khăn vệ sinh hoặc khăn cotton</li>
+            <li>Bút chì 2B, 4B, 6B để phác thảo</li>
+            <li>Tẩy chì và xóa mềm</li>
+            <li>Chai xịt nước phun cây cải tiến</li>
+            <li>Thước kẻ và đo góc độ</li>
+            <li>Gọt chì để giữ nét vẽ sắc nét</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="tab-video" class="tab-content">
+        <div class="section-header">
+          <h2>Video hướng dẫn miễn phí</h2>
+          <p class="section-subtitle">Xem trước các kỹ thuật cơ bản</p>
+        </div>
+        <div class="demo-video">
+          <div class="video-wrapper">
+            <video controls>
+              <source src="https://media.w3schools.com/intro.mp4" type="video/mp4">
+              Trình duyệt của bạn không hỗ trợ video HTML5.
+            </video>
+            <p>Video giới thiệu về khóa học Kỹ thuật màu nước cơ bản. Tìm hiểu về các dụng cụ, cách pha trộn màu sắc và bắt đầu bước đầu tiên của bạn trong thế giới vẽ màu nước.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY SECTION -->
+    <section id="community">
+      <div class="section-header">
+        <h2>Cộng đồng Học viên</h2>
+        <p class="section-subtitle">Nơi giao lưu, chia sẻ kinh nghiệm và học hỏi lẫn nhau</p>
+      </div>
+
+      <div class="forum-box">
+        <div class="forum-topic">
+          <h3>Chia sẻ tác phẩm mới</h3>
+          <p>Đây là nơi để chia sẻ những tác phẩm vừa hoàn thành của bạn và nhận được phản hồi từ cộng đồng. Hãy chia sẻ quá trình sáng tạo của bạn!</p>
+          <div class="forum-meta">
+            <span>📅 Tạo: 15/10/2024</span>
+            <span>👥 Tham gia: 345 học viên</span>
+            <span>💬 Bình luận: 1,230</span>
+          </div>
+          <a href="#" onclick="showTab('community');return false;">Tham gia thảo luận →</a>
+        </div>
+
+        <div class="forum-topic">
+          <h3>Những mẹo & thủ thuật nhanh chóng</h3>
+          <p>Khám phá những mẹo giúp cải thiện kỹ thuật vẽ, từ cách trộn màu đến các thủ thuật tiết kiệm thời gian. Trao đổi kinh nghiệm với các nghệ sĩ khác.</p>
+          <div class="forum-meta">
+            <span>📅 Tạo: 10/10/2024</span>
+            <span>👥 Tham gia: 267 học viên</span>
+            <span>💬 Bình luận: 892</span>
+          </div>
+          <a href="#" onclick="showTab('community');return false;">Tham gia thảo luận →</a>
+        </div>
+
+        <div class="forum-topic">
+          <h3>Hỏi đáp & hỗ trợ kỹ thuật</h3>
+          <p>Có câu hỏi về kỹ thuật vẽ hay cần hỗ trợ? Đây là nơi tuyệt vời để đặt câu hỏi và nhận được lời giải đáp từ giảng viên và các học viên có kinh nghiệm.</p>
+          <div class="forum-meta">
+            <span>📅 Tạo: 05/10/2024</span>
+            <span>👥 Tham gia: 412 học viên</span>
+            <span>💬 Bình luận: 1,456</span>
+          </div>
+          <a href="#" onclick="showTab('community');return false;">Tham gia thảo luận →</a>
+        </div>
+
+        <div class="forum-topic">
+          <h3>Triển lãm & Sự kiện sắp tới</h3>
+          <p>Cập nhật thông tin về các triển lãm, cuộc thi vẽ, và các sự kiện khác do trung tâm tổ chức. Đó là cơ hội tuyệt vời để trưng bày tác phẩm của bạn!</p>
+          <div class="forum-meta">
+            <span>📅 Tạo: 01/10/2024</span>
+            <span>👥 Tham gia: 523 học viên</span>
+            <span>💬 Bình luận: 2,103</span>
+          </div>
+          <a href="#" onclick="showTab('community');return false;">Tham gia thảo luận →</a>
+        </div>
+      </div>
+
+      <div id="offline-event">
+        <div class="section-header">
+          <h2>Sự kiện Offline & Triển lãm</h2>
+          <p class="section-subtitle">Tham gia các hoạt động ngoài trực tuyến để kết nối với cộng đồng</p>
+        </div>
+        <div class="events-grid">
+          <div class="event-card">
+            <h3>🎨 Workshop vẽ tường</h3>
+            <ul>
+              <li><strong>Ngày:</strong> 25-26 Tháng 11</li>
+              <li><strong>Địa điểm:</strong> Phố cổ Hà Nội</li>
+              <li><strong>Giảng viên:</strong> Minh Châu</li>
+              <li><strong>Giá:</strong> 150,000 VNĐ</li>
+            </ul>
+            <button onclick="alert('Đã đăng ký cho sự kiện này!')">Đăng ký ngay</button>
+          </div>
+
+          <div class="event-card">
+            <h3>🖼️ Triển lãm Mùa thu</h3>
+            <ul>
+              <li><strong>Ngày:</strong> 1-10 Tháng 12</li>
+              <li><strong>Địa điểm:</strong> Trung tâm Nghệ thuật</li>
+              <li><strong>Giảng viên:</strong> Hương Uyên</li>
+              <li><strong>Giá:</strong> Miễn phí</li>
+            </ul>
+            <button onclick="alert('Đã đăng ký cho sự kiện này!')">Đăng ký ngay</button>
+          </div>
+
+          <div class="event-card">
+            <h3>🎓 Buổi tư vấn hướng nghiệp</h3>
+            <ul>
+              <li><strong>Ngày:</strong> 15 Tháng 12</li>
+              <li><strong>Địa điểm:</strong> Online</li>
+              <li><strong>Giảng viên:</strong> Tuấn Anh</li>
+              <li><strong>Giá:</strong> Miễn phí</li>
+            </ul>
+            <button onclick="alert('Đã đăng ký cho sự kiện này!')">Đăng ký ngay</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="comments-section">
+        <h3>Bình luận & Phản hồi</h3>
+        <div class="comments-container" id="comments-list">
+          <div class="comment">
+            <strong>Hương Uyên:</strong>
+            <div class="comment-text">Tôi rất yêu thích cộng đồng này! Mọi người luôn sẵn sàng giúp đỡ và chia sẻ kinh nghiệm. Đây là nơi tuyệt vời để học hỏi từ các nghệ sĩ khác.</div>
+          </div>
+          <div class="comment">
+            <strong>Tuấn Anh:</strong>
+            <div class="comment-text">Các sự kiện offline rất tuyệt! Tôi đã gặp nhiều người cùng đam mê và chúng tôi thậm chí đã hợp tác làm một dự án chung. Thật tuyệt vời!</div>
+          </div>
+          <div class="comment">
+            <strong>Minh Châu:</strong>
+            <div class="comment-text">Triển lãm mùa thu sắp tới sẽ rất đặc biệt. Tôi mong chờ được thấy những tác phẩm tuyệt vời từ các học viên. Hãy tham gia nhé!</div>
+          </div>
+        </div>
+        <form id="comment-form">
+          <input type="text" placeholder="Viết bình luận của bạn..." id="comment-input">
+          <button type="submit">Gửi</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Trung tâm Nghệ thuật Sáng tạo</h4>
+        <p>Nơi khơi nguồn cảm hứng và phát triển tài năng nghệ thuật. Chúng tôi cam kết mang đến trải nghiệm học tập tốt nhất cho mỗi học viên.</p>
+        <div class="social-links">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">📸</a>
+          <a href="#" title="Twitter">𝕏</a>
+          <a href="#" title="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Liên kết nhanh</h4>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Khóa học</a></li>
+          <li><a href="#">Cộng đồng</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Thông tin liên lạc</h4>
+        <p>📍 123 Đường Tạo Tác, Hà Nội 100000, Việt Nam</p>
+        <p>📞 (024) 1234-5678</p>
+        <p>✉️ info@artcenter.vn</p>
+        <p>🕐 Thứ Hai - Chủ Nhật: 8:00 AM - 6:00 PM</p>
+      </div>
+      <div class="footer-section">
+        <h4>Chứng chỉ & Đối tác</h4>
+        <p>Được công nhận bởi các tổ chức nghệ thuật quốc tế. Đối tác chiến lược của các trường đại học hàng đầu.</p>
+        <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.8;">© 2024 Trung tâm Nghệ thuật Sáng tạo. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Thiết kế bởi <a href="#">Creative Team</a> | <a href="#">Chính sách bảo mật</a> | <a href="#">Điều khoản sử dụng</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
